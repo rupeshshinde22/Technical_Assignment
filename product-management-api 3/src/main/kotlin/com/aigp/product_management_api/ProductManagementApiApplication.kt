@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class ProductManagementApiApplication
 
 fun main(args: Array<String>) {
-    runApplication<ProductManagementApiApplication>(*args)
+	runApplication<ProductManagementApiApplication>(*args)
 }
