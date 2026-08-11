@@ -1,0 +1,14 @@
+{
+  "kotlin.languageServer.enabled": false,
+  "kotlin.debugAdapter.enabled": false,
+  "cSpell.words": [
+    "aigp",
+    "springframework",
+    "jetbrains",
+    "jsr305",
+    "junit",
+    "devtools",
+    "bootRun",
+    "kotlinx"
+  ]
+}
