@@ -1,8 +1,10 @@
-plugins {
-    kotlin("jvm") version "2.3.20"
-    kotlin("plugin.spring") version "2.3.20"
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
-    id("org.springframework.boot") version "4.1.0"
+plugins {
+    kotlin("jvm") version "2.2.20"
+    kotlin("plugin.spring") version "2.2.20"
+
+    id("org.springframework.boot") version "3.5.6"
     id("io.spring.dependency-management") version "1.1.7"
 }
 
@@ -31,9 +33,15 @@ dependencies {
 }
 
 kotlin {
+    jvmToolchain(21)
     compilerOptions {
+        jvmTarget.set(JvmTarget.JVM_21)
         freeCompilerArgs.addAll("-Xjsr305=strict")
     }
+}
+
+tasks.withType<JavaCompile>().configureEach {
+    options.release.set(21)
 }
 
 tasks.withType<Test> {
