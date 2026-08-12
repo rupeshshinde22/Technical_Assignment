@@ -1,0 +1,11 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.compile.nullAnalysis.mode": "automatic",
+    "kotlin.compiler.jvm.target": "21",
+    "kotlin.languageServer.enabled": true,
+    "kotlin.debugging.autoAttach": true,
+    "kotlin.languageServer.path": "",
+    "kotlin.compiler.scripts.enabled": true,
+    "java.jdt.ls.java.home": "/Users/rst8255/Library/Application Support/Code/User/globalStorage/pleiades.java-extension-pack-jdk/java/21",
+    "spring-boot.ls.java.home": "/Users/rst8255/Library/Application Support/Code/User/globalStorage/pleiades.java-extension-pack-jdk/java/21"
+}
