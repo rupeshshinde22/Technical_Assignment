@@ -1,3 +1,7 @@
 spring:
   application:
     name: product-management-api
+
+  devtools:
+    restart:
+      enabled: true
