@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "mathiasfrohlich.kotlin",
+    "vscjava.vscode-gradle",
+    "vmware.vscode-spring-boot",
+    "vscjava.vscode-spring-boot-dashboard",
+    "humao.rest-client"
+  ],
+  "unwantedRecommendations": [
+    "fwcd.kotlin",
+    "nicegyuha.spring-boot-extension-pack-with-kotlin"
+  ]
+}

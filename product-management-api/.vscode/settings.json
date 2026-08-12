@@ -1,22 +1,17 @@
 {
   "kotlin.languageServer.enabled": false,
   "kotlin.debugAdapter.enabled": false,
-  "kotlin.compiler.jvm.target": "21",
-  "java.configuration.updateBuildConfiguration": "automatic",
   "cSpell.enabled": false,
-  "cSpell.words": [
-    "aigp",
-    "springframework",
-    "jetbrains",
-    "jsr305",
-    "junit",
-    "jvmargs",
-    "devtools",
-    "bootRun",
-    "webmvc",
-    "kotlinx",
-    "Autowired",
-    "Bean",
-    "Mvc"
-  ]
+  "files.associations": {
+    "*.kt": "kotlin",
+    "*.kts": "kotlin"
+  },
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 800,
+  "files.exclude": {
+    "**/.gradle": true,
+    "**/build": true,
+    "**/bin": true,
+    "**/.kotlin": true
+  }
 }

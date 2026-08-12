@@ -1,0 +1,50 @@
+### Product Management API - REST Client requests
+### Install the "REST Client" (humao.rest-client) extension,
+### then click "Send Request" above any block below.
+
+@host = http://localhost:8080
+
+### Hello (sanity check) - note the mapping is "/" not "/h"
+GET {{host}}/
+
+### Health check
+GET {{host}}/actuator/health
+
+### Create a product
+POST {{host}}/api/products
+Content-Type: application/json
+
+{
+  "name": "Laptop",
+  "price": 55000.0,
+  "quantity": 10
+}
+
+### Get all products
+GET {{host}}/api/products
+
+### Get one product
+GET {{host}}/api/products/1
+
+### Update a product
+PUT {{host}}/api/products/1
+Content-Type: application/json
+
+{
+  "name": "Gaming Laptop",
+  "price": 75000.0,
+  "quantity": 5
+}
+
+### Delete a product
+DELETE {{host}}/api/products/1
+
+### Validation failure (should return 400)
+POST {{host}}/api/products
+Content-Type: application/json
+
+{
+  "name": "",
+  "price": -5,
+  "quantity": -1
+}
