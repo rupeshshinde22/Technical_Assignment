@@ -1,9 +1,11 @@
-plugins {
-    kotlin("jvm") version "2.2.20"
-    kotlin("plugin.spring") version "2.2.20"
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
-    id("org.springframework.boot") version "4.1.0"
-    id("io.spring.dependency-management") version "1.1.7"
+plugins {
+	kotlin("jvm") version "2.2.20"
+	kotlin("plugin.spring") version "2.2.20"
+
+	id("org.springframework.boot") version "4.1.0"
+	id("io.spring.dependency-management") version "1.1.7"
 }
 
 group = "com.aigp"
@@ -32,9 +34,20 @@ dependencies {
 }
 
 kotlin {
+	jvmToolchain(21)
 	compilerOptions {
-		jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_21)
+		jvmTarget.set(JvmTarget.JVM_21)
 		freeCompilerArgs.addAll("-Xjsr305=strict", "-Xannotation-default-target=param-property")
+	}
+}
+
+tasks.withType<JavaCompile>().configureEach {
+	options.release.set(21)
+}
+
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
+	compilerOptions {
+		jvmTarget.set(JvmTarget.JVM_21)
 	}
 }
 

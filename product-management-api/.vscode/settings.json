@@ -2,6 +2,7 @@
   "kotlin.languageServer.enabled": false,
   "kotlin.debugAdapter.enabled": false,
   "kotlin.compiler.jvm.target": "21",
+  "java.configuration.updateBuildConfiguration": "automatic",
   "cSpell.enabled": false,
   "cSpell.words": [
     "aigp",
@@ -13,6 +14,9 @@
     "devtools",
     "bootRun",
     "webmvc",
-    "kotlinx"
+    "kotlinx",
+    "Autowired",
+    "Bean",
+    "Mvc"
   ]
 }
